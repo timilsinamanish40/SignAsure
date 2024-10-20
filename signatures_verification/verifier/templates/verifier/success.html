@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'verifier/styles.css' %}">
+</head>
+<body>
+    <div class="centered-container">
+        <h2>Success!</h2>
+        <p>Your signature has been uploaded successfully.</p>
+        <a href="{% url 'upload_signature' %}" class="action-button">Upload Another Signature</a>
+        <a href="{% url 'home' %}" class="action-button">Go to Home</a>
+    </div>
+</body>
+</html>
